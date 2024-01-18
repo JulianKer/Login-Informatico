@@ -87,8 +87,6 @@ body{
     display: flex;
     flex-direction: column;
 
-    color: white;
-
     background-color: rgb(47, 47, 47);
     box-shadow: 0px 0px 30px 15px black;
     border-radius: 15px;
@@ -97,7 +95,7 @@ body{
 .titulo{
     color: rgb(0, 255, 0);
     text-align: center;
-    padding: .5em;
+    padding: 1em;
 }
 
 .formulario{
@@ -116,20 +114,35 @@ body{
 
 .contenedor-usuario input,
 .contenedor-password input{
+    color: white;
     font-size: 1.3em;
     width: 80%;
     height: 2.3em;
     margin: 10px;
-    padding: 5px;
-
+    padding: 20px 10px 10px 10px;
+    
     border: none;
+    border-radius: 5px;
     background-color: rgb(86, 86, 86);
     caret-color: rgb(0, 255, 0);
+    outline: none;
 }
 
-.contenedor-usuario label{
+.contenedor-usuario label,
+.contenedor-password label{
+    color: white;
+    font-size: 1.3em;
     position: absolute;
     left: 45px;
-    top: 20px;
+
+    transform: translateY(60%);
+    transition: all .2s;
+}
+
+.contenedor-usuario input:focus ~ label,
+.contenedor-password input:focus ~ label{
+    font-size: 1em;
+    top: -7px;
+    color: rgb(177, 177, 177);
 }
 /*----------------------------------------------------------------------------------*/
