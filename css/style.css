@@ -11,17 +11,9 @@ body{
 
 .contenedor-principal{
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    row-gap: 2.5px;
-    column-gap: 2.5px;
-    padding-top: 8px;
-    padding-left: 15px;
-
     width: 100%;
     height: 100%;
     background-color: black;
-    z-index: -5;
 }
 
 /*------------------------------ ANIMACION DE FONDO -----------------------------------*/
@@ -36,7 +28,7 @@ body{
     background: linear-gradient(to bottom, black, rgb(0, 255, 0), black);
     animation: animacionLuzVerde 4s linear infinite;
 
-    z-index: -1;
+    z-index: 1;
 }
 
 @keyframes animacionLuzVerde {
@@ -49,10 +41,27 @@ body{
 }
 /*-------------------------------------------------------------------------------------*/
 
+.cuadricula{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    row-gap: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
 .celda{
     width: 75px;
     height: 75px;
-    background-color: black;
-    border: solid 1px rgb(0, 255, 0);
+    background-color: rgb(25, 25, 25);
+    transition: all 1.5s ease-out;
 }
 
+.celda:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 0);
+    transition: none;
+}
