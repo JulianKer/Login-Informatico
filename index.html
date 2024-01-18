@@ -11,16 +11,23 @@
 
         <div class="contenedor-login">
             <h1 class="titulo">Inicio</h1>
+
             <form action="#" class="formulario">
 
-                <label for="usuario">Usuario</label>
-                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                <div class="contenedor-usuario">
+                    <input type="text" name="usuario" class="usuario" id="usuario">
+                    <label for="usuario">Usuario</label>
+                </div>
 
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="password" id="contraseña" placeholder="Contraseña">
+                <div class="contenedor-password">
+                    <input type="password" name="password" class="contraseña" id="contraseña">
+                    <label for="contraseña">Contraseña</label>
+                </div>
 
-                <a href="#">Olvidé mi contraseña</a>
-                <a href="#">Registrarse</a>
+                <div class="enlaces">
+                    <a href="#">Olvidé mi contraseña</a>
+                    <a href="#">Registrarse</a>
+                </div>
 
                 <button type="submit" class="boton">Iniciar sesión</button>
             </form>

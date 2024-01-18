@@ -66,12 +66,11 @@ body{
 .celda{
     width: 75px;
     height: 75px;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(40, 40, 40);
     transition: all 1.5s ease-out;
 }
 
 .celda:hover{
-    cursor: pointer;
     background-color: rgb(0, 255, 0);
     transition: none;
 }
@@ -81,12 +80,56 @@ body{
     position: absolute;
     z-index: 10;
 
-    width: 20%;
-    height: 50%;
+    
+    width: 23%;
+    height: 60%;
 
     display: flex;
     flex-direction: column;
 
-    background-color: red;
+    color: white;
+
+    background-color: rgb(47, 47, 47);
+    box-shadow: 0px 0px 30px 15px black;
+    border-radius: 15px;
+}
+
+.titulo{
+    color: rgb(0, 255, 0);
+    text-align: center;
+    padding: .5em;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-usuario,
+.contenedor-password{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.contenedor-usuario input,
+.contenedor-password input{
+    font-size: 1.3em;
+    width: 80%;
+    height: 2.3em;
+    margin: 10px;
+    padding: 5px;
+
+    border: none;
+    background-color: rgb(86, 86, 86);
+    caret-color: rgb(0, 255, 0);
+}
+
+.contenedor-usuario label{
+    position: absolute;
+    left: 45px;
+    top: 20px;
 }
 /*----------------------------------------------------------------------------------*/
