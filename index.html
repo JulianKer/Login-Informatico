@@ -8,8 +8,26 @@
 </head>
 <body>
     <div class="contenedor-principal">
-        <div class="animacion-verde"></div>
 
+        <div class="contenedor-login">
+            <h1 class="titulo">Inicio</h1>
+            <form action="#" class="formulario">
+
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="password" id="contraseña" placeholder="Contraseña">
+
+                <a href="#">Olvidé mi contraseña</a>
+                <a href="#">Registrarse</a>
+
+                <button type="submit" class="boton">Iniciar sesión</button>
+            </form>
+        </div>
+
+        <!-- ------ de aca para abajo, es el tema del fondo, lo que es la cuadricula con la animacion de la luz verde y las celdas ----- -->
+        <div class="animacion-verde"></div>
         <div class="cuadricula">
             <div class="celda"></div>
             <div class="celda"></div>
@@ -183,7 +201,7 @@
             <div class="celda"></div>
             <div class="celda"></div>
         </div>
-
+        <!-- ----------------------------------------- aca termina el tema del fondo ----------------------------------------- -->
     </div>
     <script href="js/script.js"></script>
 </body>
