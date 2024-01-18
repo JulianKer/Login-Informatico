@@ -49,7 +49,7 @@ body{
         transform: translateY(110%);
     }
 }
-/*-------------------------------------------------------------------------------------*/
+/*--------------------------fin de animacion de fondo---------------------------------------*/
 
 .cuadricula{
     width: 100%;
@@ -66,7 +66,7 @@ body{
 .celda{
     width: 75px;
     height: 75px;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(17, 17, 17);
     transition: all 1.5s ease-out;
 }
 
@@ -87,7 +87,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(22, 22, 22);
     box-shadow: 0px 0px 30px 15px black;
     border-radius: 15px;
 }
@@ -123,7 +123,7 @@ body{
     
     border: none;
     border-radius: 5px;
-    background-color: rgb(86, 86, 86);
+    background-color: rgb(32, 32, 32);
     caret-color: rgb(0, 255, 0);
     outline: none;
 }
@@ -143,6 +143,29 @@ body{
 .contenedor-password input:focus ~ label{
     font-size: 1em;
     top: -7px;
-    color: rgb(177, 177, 177);
+    color: rgb(85, 85, 85);
 }
-/*----------------------------------------------------------------------------------*/
+
+.olvide,
+.register{
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+}
+
+.olvide{
+    color: white;
+}
+
+.olvide:hover{
+    color: rgb(0, 255, 0);
+}
+
+.register{
+    color: rgb(0, 255, 0);
+}
+.register:hover{
+    text-decoration: underline;
+}
+
+/*---------------------------fin contenedor login--------------------------------------*/
