@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor-principal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.animacion-verde{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: linear-gradient(to bottom, black, rgb(0, 255, 0), black);
+    animation: animacionLuzVerde 2.5s linear infinite;
+}
+
+@keyframes animacionLuzVerde {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
