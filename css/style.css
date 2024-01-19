@@ -174,9 +174,6 @@ img:hover{
     transform: translateY(60%);
     transition: all .2s;
 }
-.borde-de-input-verde{
-    border-bottom: solid 3px rgb(0, 255, 0);
-}
 
 .olvide,
 .register{
