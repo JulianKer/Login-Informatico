@@ -145,6 +145,10 @@ img:hover{
     outline: none;
 }
 
+.contenedor-password .contraseña{
+    letter-spacing: 3px;
+}
+
 .contenedor-usuario .label-usuario,
 .contenedor-password .label-contraseña{
     color: white;
