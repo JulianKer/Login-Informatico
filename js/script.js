@@ -22,6 +22,15 @@ form.addEventListener("submit",(e)=>{
         form.submit(); // envío el formulario
     }else{
         // si no, hago esto
+
+        if (inputUsuario.value === "" && inputContraseña.value === "") {
+            inputUsuario.style.borderBottom = "solid 3px red";
+            inputContraseña.style.borderBottom = "solid 3px red";
+        }else if (inputUsuario.value === "") {
+            inputUsuario.style.borderBottom = "solid 3px red";
+        }else{
+            inputContraseña.style.borderBottom = "solid 3px red";
+        }
     }
 })
 
