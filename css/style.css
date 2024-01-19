@@ -129,8 +129,8 @@ img:hover{
     place-items: center;
 }
 
-.contenedor-usuario input,
-.contenedor-password input{
+.contenedor-usuario .usuario,
+.contenedor-password .contraseña{
     color: white;
     font-size: 1.3em;
     width: 80%;
@@ -145,8 +145,8 @@ img:hover{
     outline: none;
 }
 
-.contenedor-usuario label,
-.contenedor-password label{
+.contenedor-usuario .label-usuario,
+.contenedor-password .label-contraseña{
     color: white;
     font-size: 1.3em;
     position: absolute;
@@ -156,11 +156,26 @@ img:hover{
     transition: all .2s;
 }
 
+/*
 .contenedor-usuario input:focus ~ label,
 .contenedor-password input:focus ~ label{
     font-size: 1em;
     top: -7px;
     color: rgb(85, 85, 85);
+}*/
+
+.label-activado{
+    font-size: 1em;
+    position: absolute;
+    top: -7px;
+    color: rgb(85, 85, 85);
+
+    left: 45px;
+    transform: translateY(60%);
+    transition: all .2s;
+}
+.borde-de-input-verde{
+    border-bottom: solid 3px rgb(0, 255, 0);
 }
 
 .olvide,
