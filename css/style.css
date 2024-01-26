@@ -15,6 +15,11 @@ body{
     overflow: hidden;
 }
 
+::selection{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 0);
+}
+
 .contenedor-principal{
     position: relative;
     width: 100%;
