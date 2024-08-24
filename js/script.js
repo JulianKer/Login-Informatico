@@ -5,14 +5,14 @@ const labelUsuario = document.querySelector(".label-usuario");
 const labelContraseña = document.querySelector(".label-contraseña");
 const botonEnviar = document.querySelector(".boton");
 
-console.log(form);
-console.log(inputUsuario);
-console.log(inputContraseña);
-console.log(labelUsuario);
-console.log(labelContraseña);
-console.log(botonEnviar);
+const cuadricula = document.querySelector(".cuadricula");
+let celda = `<div class="celda"></div>`;
 
-console.log();
+document.addEventListener("DOMContentLoaded", ()=>{
+    for (let i = 0; i < 136; i++) {
+        cuadricula.innerHTML += celda;
+    }
+})
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault(); //preveo que NO se envie automaticamente y despues...
