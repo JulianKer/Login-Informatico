@@ -164,6 +164,7 @@ img:hover{
 
     transform: translateY(60%);
     transition: all .2s;
+    cursor: text;
 }
 
 /*
@@ -183,6 +184,7 @@ img:hover{
     left: 45px;
     transform: translateY(60%);
     transition: all .2s;
+    cursor: text;
 }
 
 .olvide,
@@ -193,7 +195,7 @@ img:hover{
 }
 
 .olvide{
-    color: white;
+    color: rgb(120, 120, 120);
 }
 
 .olvide:hover{
