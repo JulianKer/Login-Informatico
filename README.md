@@ -1,6 +1,6 @@
 ### Login
 ---
-<p>Este es un login interactivo con un estilo informático(? . La idea surgió de muchos otros bocetos que vi por internet.</p>
+<p>Login con estilo informático(?</p>
 
 _____
 
